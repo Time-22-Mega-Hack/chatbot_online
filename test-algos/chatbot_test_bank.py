@@ -53,7 +53,7 @@ def conversation():
             break
 
 
-conversation()
+#conversation()
 
 # --------------------------------------
 # GUI + website
@@ -71,5 +71,6 @@ def get_bot_response():
     usertext = request.args.get('msg')
     return str(bot.get_response(usertext))
 
-# if __name__ == "__main__":
-#    app.run()
+
+if __name__ == "__main__":
+    app.run()
